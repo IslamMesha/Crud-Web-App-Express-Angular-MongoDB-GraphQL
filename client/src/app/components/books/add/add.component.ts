@@ -48,6 +48,10 @@ export class AddComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.validateForm();
+  }
+
+  validateForm() {
     this.bookForm = this.formBuilder.group({
       isbn: [null, Validators.required],
       title: [null, Validators.required],
