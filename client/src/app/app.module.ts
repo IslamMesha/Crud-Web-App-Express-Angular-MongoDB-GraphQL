@@ -11,7 +11,18 @@ import { BooksComponent } from './components/books/books.component';
 import { DetailComponent } from './components/books/detail/detail.component';
 import { EditComponent } from './components/books/edit/edit.component';
 import { AddComponent } from './components/books/add/add.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  MatInputModule,
+  MatPaginatorModule,
+  MatProgressSpinnerModule,
+  MatSortModule,
+  MatTableModule,
+  MatIconModule,
+  MatButtonModule,
+  MatCardModule,
+  MatFormFieldModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -27,6 +38,7 @@ import { AddComponent } from './components/books/add/add.component';
     HttpClientModule,
     ApolloModule,
     HttpLinkModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
